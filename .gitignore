@@ -1,0 +1,18 @@
+/.cpcache/
+/.nrepl-port
+/node_modules/
+/public/js/
+/public/css/
+/public/resources/
+/resources/
+
+# VIM editor
+.vimrc
+.vim/
+coc-settings.json
+.tern-project
+.prettierrc
+config.edn
+tags
+tags.lock
+tags.temp

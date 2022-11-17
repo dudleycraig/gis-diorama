@@ -1,0 +1,13 @@
+{:deps {:aliases [:client :server :common :dev :test :vim]}
+ :builds {:app 
+          {:target :browser
+           :build-hooks [(main.build/load-env)]
+           :js-options {:entry-keys ["module" "browser" "main"]}
+           :module-hash-names true
+           :release-flag :dev
+           :output-dir "public/js"
+           :asset-path "/js"
+           :modules {:package {:init-fn main.core/init
+                               :entries [main.core]}}}}
+ :dev-http {3000 "public"}
+ :nrepl {:port 3333}}
